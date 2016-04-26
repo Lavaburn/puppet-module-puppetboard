@@ -13,7 +13,8 @@ class puppetboard::params {
       } else {
       $apache_confd   = '/etc/apache2/conf.d'
       }
-      $apache_service = 'apache2'
+      #$apache_service = 'apache2'  - Apache2 module changed Service Alias
+      $apache_service = 'httpd'
     }
 
     'RedHat': {
